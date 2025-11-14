@@ -1058,7 +1058,8 @@
         
         // Integração com Google Sheets
         let apiUrl = localStorage.getItem('apiUrl') || '';
-        let usarNuvem = localStorage.getItem('usarNuvem') === 'true';
+        // Aceita tanto 'cloudSync' quanto 'usarNuvem' para compatibilidade
+        let usarNuvem = localStorage.getItem('cloudSync') === 'true' || localStorage.getItem('usarNuvem') === 'true';
         let carregando = false;
         
         // Configurações padrão
@@ -1521,7 +1522,8 @@
             
             if (resultado.sucesso) {
                 localStorage.setItem('apiUrl', url);
-                localStorage.setItem('usarNuvem', usar);
+                localStorage.setItem('cloudSync', usar); // Nome principal
+                localStorage.setItem('usarNuvem', usar); // Compatibilidade
                 usarNuvem = usar;
                 
                 statusDiv.style.background = '#d1fae5';
