@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cross Experience - Avaliação de Desempenho</title>
+    <title>CROSS EXPERIENCE - Avaliação de Desempenho</title>
     
     <!-- Bibliotecas CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     
     <style>
+        /* Importar fonte da empresa */
+        @font-face {
+            font-family: 'CXFONT';
+            src: url('CXFONT.ttf') format('truetype'),
+                 url('CXFONT.otf') format('opentype'),
+                 url('CXFONT.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -59,6 +69,9 @@
             color: #002060;
             font-size: 2.5em;
             margin-bottom: 10px;
+            font-family: 'CXFONT', 'Segoe UI', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .header p {
@@ -654,7 +667,7 @@
                 <div class="header-logo-title">
                     <img src="https://raw.githubusercontent.com/daniela-rh/sistema-cross-experience/main/logo.jpg.png" alt="Logo" class="company-logo">
                     <div>
-                        <h1>Cross Experience</h1>
+                        <h1>CROSS EXPERIENCE</h1>
                         <p>Sistema de Avaliação de Desempenho</p>
                         <p class="hashtag">#MELHORIACONTINUA</p>
                     </div>
@@ -2039,7 +2052,7 @@
             yPos += 10;
             doc.setFontSize(10);
             doc.setFont(undefined, 'normal');
-            doc.text('Cross Experience - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
+            doc.text('CROSS EXPERIENCE - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
             doc.save('relatorio-avaliacoes.pdf');
             alert('✅ PDF exportado!');
         }
@@ -2099,7 +2112,7 @@
             
             doc.setFontSize(10);
             doc.setFont(undefined, 'normal');
-            doc.text('Cross Experience - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
+            doc.text('CROSS EXPERIENCE - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
             yPos += 15;
             
             // Dados da avaliação
@@ -2210,7 +2223,7 @@
             
             doc.setFontSize(10);
             doc.setFont(undefined, 'normal');
-            doc.text('Cross Experience - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
+            doc.text('CROSS EXPERIENCE - #MELHORIACONTINUA', 105, yPos, { align: 'center' });
             yPos += 15;
             
             // Dados
