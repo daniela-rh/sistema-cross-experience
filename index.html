@@ -18,7 +18,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #002060 0%, #001a4d 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -56,7 +56,7 @@
         }
 
         .header h1 {
-            color: #667eea;
+            color: #002060;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
@@ -67,15 +67,15 @@
         }
 
         .hashtag {
-            color: #764ba2;
+            color: #FFC000;
             font-weight: bold;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .admin-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #002060 0%, #001a4d 100%);
+            color: #FFC000;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9em;
@@ -135,13 +135,14 @@
         }
 
         .btn-primary {
-            background: #667eea;
-            color: white;
+            background: #FFC000;
+            color: #002060;
+            font-weight: bold;
         }
 
         .btn-secondary {
-            background: #764ba2;
-            color: white;
+            background: #002060;
+            color: #FFC000;
         }
 
         .btn-warning {
@@ -180,13 +181,14 @@
             font-size: 1em;
             font-weight: bold;
             transition: all 0.3s;
-            color: #667eea;
+            color: #002060;
         }
 
         .tab.active {
             background: white;
-            color: #764ba2;
+            color: #FFC000;
             transform: translateY(-5px);
+            border-bottom: 3px solid #FFC000;
         }
 
         .tab.hidden {
@@ -210,13 +212,13 @@
         }
 
         .card h2 {
-            color: #667eea;
+            color: #002060;
             margin-bottom: 20px;
             font-size: 1.8em;
         }
 
         .card h3 {
-            color: #667eea;
+            color: #002060;
             margin-bottom: 15px;
             font-size: 1.3em;
         }
@@ -248,7 +250,7 @@
         input:focus,
         textarea:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #FFC000;
         }
 
         textarea {
@@ -273,13 +275,13 @@
         }
 
         .classification-option:hover {
-            border-color: #667eea;
+            border-color: #FFC000;
             transform: translateY(-2px);
         }
 
         .classification-option.selected {
-            border-color: #667eea;
-            background: #f0f4ff;
+            border-color: #FFC000;
+            background: #fff8e6;
         }
 
         .classification-option.yellow {
@@ -319,8 +321,8 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #002060 0%, #001a4d 100%);
+            color: #FFC000;
             padding: 25px;
             border-radius: 12px;
             text-align: center;
@@ -351,7 +353,7 @@
         }
 
         .evaluation-item:hover {
-            border-color: #667eea;
+            border-color: #FFC000;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
@@ -414,11 +416,11 @@
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border-color: #667eea;
+            border-color: #FFC000;
         }
 
         .feature-card h3 {
-            color: #667eea;
+            color: #002060;
             font-size: 1.5em;
             margin-bottom: 15px;
         }
@@ -490,7 +492,7 @@
 
         .question-list li:before {
             content: "✓ ";
-            color: #764ba2;
+            color: #FFC000;
             font-weight: bold;
             margin-right: 8px;
         }
@@ -532,8 +534,8 @@
 
         .question-number {
             display: inline-block;
-            background: #667eea;
-            color: white;
+            background: #FFC000;
+            color: #002060;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -544,17 +546,17 @@
         }
 
         .title-editor {
-            background: #f0f4ff;
+            background: #fff8e6;
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 25px;
-            border: 3px solid #667eea;
+            border: 3px solid #FFC000;
         }
 
         .title-editor input {
             font-size: 1.2em;
             font-weight: bold;
-            color: #667eea;
+            color: #002060;
         }
 
         /* Modal */
@@ -587,7 +589,7 @@
         }
 
         .modal-content h2 {
-            color: #667eea;
+            color: #002060;
             margin-bottom: 20px;
         }
 
@@ -855,7 +857,7 @@
                         </div>
                     </div>
 
-                    <h3 style="margin: 30px 0 20px; color: #667eea;">Perguntas</h3>
+                    <h3 style="margin: 30px 0 20px; color: #002060;">Perguntas</h3>
 
                     <div id="questions-container">
                         <!-- As perguntas serão carregadas dinamicamente aqui -->
@@ -887,7 +889,7 @@
                 </div>
 
                 <div class="title-editor">
-                    <label style="font-size: 1.3em; color: #667eea;">📝 Título do Formulário</label>
+                    <label style="font-size: 1.3em; color: #002060;">📝 Título do Formulário</label>
                     <input type="text" id="config-titulo" placeholder="Ex: One-on-One 7.5, Conversa Mensal, Feedback 360..." 
                            style="margin-top: 10px;">
                     <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
@@ -1041,7 +1043,7 @@
         <div class="modal-content">
             <h2>🔐 Acesso Administrativo</h2>
             <p style="color: #666; margin-bottom: 10px;">Digite a senha para acessar o modo administrador</p>
-            <p style="color: #667eea; font-size: 0.9em; margin-bottom: 20px;">
+            <p style="color: #002060; font-size: 0.9em; margin-bottom: 20px;">
                 💡 Senha padrão: <strong>admin</strong>
             </p>
             <div class="form-group">
@@ -1049,7 +1051,7 @@
                 <input type="password" id="login-senha" placeholder="Digite: admin">
             </div>
             <div style="text-align: center; margin: 10px 0;">
-                <button onclick="resetarSenha()" style="background: none; border: none; color: #667eea; text-decoration: underline; cursor: pointer; font-size: 0.9em;">
+                <button onclick="resetarSenha()" style="background: none; border: none; color: #002060; text-decoration: underline; cursor: pointer; font-size: 0.9em;">
                     Esqueci a senha / Resetar para "admin"
                 </button>
             </div>
@@ -1253,7 +1255,7 @@
             if (!loading) {
                 loading = document.createElement('div');
                 loading.id = 'loading-indicator';
-                loading.innerHTML = '<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px 40px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 10000; text-align: center;"><div style="font-size: 2em; margin-bottom: 10px;">⏳</div><div style="font-weight: bold; color: #667eea;">Sincronizando com nuvem...</div></div>';
+                loading.innerHTML = '<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px 40px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 10000; text-align: center;"><div style="font-size: 2em; margin-bottom: 10px;">⏳</div><div style="font-weight: bold; color: #002060;">Sincronizando com nuvem...</div></div>';
                 document.body.appendChild(loading);
             }
             loading.style.display = 'block';
